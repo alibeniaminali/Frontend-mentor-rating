@@ -43,6 +43,11 @@ body {
   --dark-blue-darker: hsl(216, 12%, 8%);
 }
 
+.text-white {
+    color: var(--white);
+    font-weight: 700;
+}
+
 .card {
   max-width: 400px;
   padding: 30px;
