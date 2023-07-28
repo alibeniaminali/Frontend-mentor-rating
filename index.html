@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/app.js"></script>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <div class="card">
+      <img class="form__image" src="./images/icon-star.svg" alt="star icon" />
+      <h1>How did we do?</h1>
+      <form id="form">
+        <fieldset>
+          <legend>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </legend>
+          <div class="input__container">
+            <label for="one">
+              <input type="radio" id="one" name="rating" value="1" />1
+            </label>
+            <label for="two">
+              <input type="radio" id="two" name="rating" value="2" />2
+            </label>
+            <label for="three">
+              <input type="radio" id="three" name="rating" value="3" />3
+            </label>
+            <label for="four">
+              <input type="radio" id="four" name="rating" value="4" />4
+            </label>
+            <label for="five">
+              <input type="radio" id="five" name="rating" value="5" />5
+            </label>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" value="Submit" id="submit-button" disabled />
+        </div>
+      </form>
+    </div>
+    
+    <div class="card card--response">
+      <img src="./images/illustration-thank-you.svg" alt="star icon" />
+      <p>You selected <span id="rate">0</span> out of 5</p>
+      <h2>Thank you!</h2>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </div>
+
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ali Ali</a>.
+    </footer>
+  </body>
+</html>
