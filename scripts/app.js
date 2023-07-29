@@ -14,6 +14,7 @@ function init() {
     }
     formCard.remove()
     responseCard.style.display = 'block'
+    navigator.vibrate([200, 100, 200])
   }
 
   // Event
