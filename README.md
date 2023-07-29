@@ -52,7 +52,7 @@ The component renders with a disabled submit input. Once the user has selected a
 3. Added a vibration using `Navigator: vibrate()` method if the device has a vibration hardware
 4. To work with different CSS pseudo-classes, such as `:not` `:is:` `:last-child()` and others
 
-- I came up with a nice solution to toggle the background color of the label if the input inside of it is checked.
+- I came up with a nice solution to toggle the background color of the label if the input inside is checked.
 
 ```css
 label:has(input:checked) {
@@ -77,7 +77,7 @@ function handleSubmit(event) {
     }
 }
 ```
-- To work with different CSS pseudo-classes, such as `:not` `:is:` `:last-child()` and others
+- Work with different CSS pseudo-classes, such as `:not` `:is:` `:last-child()` and others
 ```css
 .card--response p:nth-child(2) {
   color: var(--orange-light);
