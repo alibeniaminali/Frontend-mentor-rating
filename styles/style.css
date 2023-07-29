@@ -7,12 +7,12 @@
 }
 
 a {
-    text-decoration: none;
-    color: var(--white);
+  text-decoration: none;
+  color: var(--white);
 }
 
 footer {
-    color: var(--medium-grey);
+  color: var(--medium-grey);
 }
 
 body {
@@ -30,6 +30,7 @@ body {
 
 :root {
   --font-family: 'Overpass', sans-serif;
+  /* --font-family: system-ui, sans-serif; */
   --font-size: 15px;
   /* Primary */
   --orange: hsl(25, 97%, 53%);
@@ -44,8 +45,8 @@ body {
 }
 
 .text-white {
-    color: var(--white);
-    font-weight: 700;
+  color: var(--white);
+  font-weight: 700;
 }
 
 .card {
@@ -96,15 +97,14 @@ input:is([type='submit']) {
   border: none;
 }
 
-/* input:is([type='submit']):disabled {
-    background-color: var(--lighter-grey);
-    cursor: not-allowed;
+input:is([type='submit']):disabled {
+  cursor: not-allowed;
 }
 
 input:is([type='submit']):disabled:hover {
-    background-color: var(--lighter-grey);
-    cursor: not-allowed;
-} */
+  background-color: var(--lighter-grey);
+  cursor: not-allowed;
+}
 
 input:is([type='submit']):hover {
   color: var(--orange);
@@ -133,7 +133,7 @@ label:hover {
 }
 
 input:checked {
-    background-color: red;
+  background-color: red;
 }
 
 .form__image {
