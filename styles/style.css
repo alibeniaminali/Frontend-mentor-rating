@@ -6,15 +6,6 @@
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-footer {
-  color: var(--medium-grey);
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -42,6 +33,15 @@ body {
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --dark-blue-darker: hsl(216, 12%, 8%);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+footer {
+  color: var(--medium-grey);
 }
 
 .text-white {

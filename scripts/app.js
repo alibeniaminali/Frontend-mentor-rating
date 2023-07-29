@@ -5,6 +5,7 @@ function init() {
   const formCard = document.body.firstElementChild
   const responseCard = document.querySelector('.card--response')
   
+  // Functions
   function handleSubmit(event) {
     event.preventDefault()
     for (let i = 0; i < ele.length; i++) {
@@ -14,13 +15,15 @@ function init() {
     }
     formCard.remove()
     responseCard.style.display = 'block'
-    navigator.vibrate([200, 100, 200])
+    if (navigator.vibrate) {
+      window.navigator.vibrate(40)
+    }
   }
 
-  // Event
+  // Events
   form.addEventListener('submit', handleSubmit)
   ele.forEach((item) => {
-    item.addEventListener('click', (e) => {
+    item.addEventListener('click', () => {
       if (item.checked) {
         submitButton.disabled = false
         // console.log(e.target.value)
