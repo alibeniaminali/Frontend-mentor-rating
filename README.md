@@ -2,6 +2,9 @@
 
 
 ### Screenshot
+![Screenshot 2023-07-29 at 14 13 07](https://github.com/alibeniaminali/Frontend-mentor-rating/assets/94930059/fc99a631-a2f8-4e45-b779-5f12e6178716)
+![Screenshot 2023-07-29 at 14 13 57](https://github.com/alibeniaminali/Frontend-mentor-rating/assets/94930059/fc121a6d-b112-40ee-a362-7355f5100c10)
+
 
 ## Table of contents
 
