@@ -1,10 +1,9 @@
 # Frontend Mentor - Interactive rating component solution
 
-
 ### Screenshot
+
 ![Screenshot 2023-07-29 at 14 13 07](https://github.com/alibeniaminali/Frontend-mentor-rating/assets/94930059/fc99a631-a2f8-4e45-b779-5f12e6178716)
 ![Screenshot 2023-07-29 at 14 13 57](https://github.com/alibeniaminali/Frontend-mentor-rating/assets/94930059/fc121a6d-b112-40ee-a362-7355f5100c10)
-
 
 ## Table of contents
 
@@ -35,6 +34,8 @@ Users should be able to:
 
 ## My process
 
+The component renders with a disabled submit input. Once the user has selected a rating, the disabled attribute is removed and the user is able to submit their rating. 
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -43,27 +44,40 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - JavaScript
+
 ### What I learned
 
 1. Working with forms and input types
 2. Practiced DOM manipulation, styling with CSS and JavaScript
-3. Added a vibration pattern using ```Navigator: vibrate()``` method
-4. To work with different CSS pseudo-classes, such as ```:not``` ```:is:``` ```:last-child()``` and others
+3. Added a vibration using `Navigator: vibrate()` method if the device has a vibration hardware
+4. To work with different CSS pseudo-classes, such as `:not` `:is:` `:last-child()` and others
 
-```js
-function handleSubmit(event) {
-    event.preventDefault()
-    for (let i = 0; i < ele.length; i++) {
-      if (ele[i].checked) {
-        document.getElementById('rate').innerHTML = ele[i].value
-      }
-    }
-    formCard.remove()
-    responseCard.style.display = 'block'
-    navigator.vibrate([200, 100, 200])
-  }
+- I came up with a nice solution to toggle the background color of the label if the input inside of it is checked.
+
+```css
+label:has(input:checked) {
+  background-color: var(--orange);
+  color: var(--white);
+}
 ```
 
+- Added a vibration using `Navigator: vibrate()` method if the device has a vibration hardware
+```js
+function handleSubmit(event) {
+  event.preventDefault()
+  for (let i = 0; i < ele.length; i++) {
+    if (ele[i].checked) {
+      document.getElementById('rate').innerHTML = ele[i].value
+    }
+  }
+  formCard.remove()
+  responseCard.style.display = 'block'
+  if (navigator.vibrate) {
+      window.navigator.vibrate(40)
+    }
+}
+```
+- To work with different CSS pseudo-classes, such as `:not` `:is:` `:last-child()` and others
 ```css
 .card--response p:nth-child(2) {
   color: var(--orange-light);
@@ -94,5 +108,3 @@ This is my second challenge with Frontend Mentor. Next I am planning to work on 
 - Website - [Ali Ali](https://www.alibeniaminali.co.uk/)
 - Frontend Mentor - [@alibeniaminali](https://www.frontendmentor.io/profile/alibeniaminali)
 - Instagram - [@alibeniamin](https://www.instagram.com/alibeniamin/?hl=en-gb)
-
-

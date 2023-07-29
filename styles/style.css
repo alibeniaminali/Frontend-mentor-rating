@@ -132,10 +132,6 @@ label:hover {
   color: var(--white);
 }
 
-input:checked {
-  background-color: red;
-}
-
 .form__image {
   padding: 15px;
   background-color: var(--dark-blue);
@@ -156,4 +152,9 @@ p {
   color: var(--light-grey);
   font-size: 1em;
   margin-bottom: 20px;
+}
+
+label:has(input:checked) {
+  background-color: var(--orange);
+  color: var(--white)
 }
